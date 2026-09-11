@@ -28,7 +28,7 @@ h1 {
   gap: 10px;
 }
 
-input {
+#taskInput {
   flex: 1;
   box-sizing: border-box;
   padding: 12px;
@@ -76,6 +76,27 @@ li {
 
 li span {
   overflow-wrap: anywhere;
+}
+
+.task-content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  flex: none;
+  accent-color: #2563eb;
+}
+
+.task-text.completed {
+  color: #9ca3af;
+  text-decoration: line-through;
 }
 
 .delete-button {
